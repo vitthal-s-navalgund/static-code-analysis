@@ -1,1 +1,1 @@
-# static-code-analysis
+# static-analysis-lab
