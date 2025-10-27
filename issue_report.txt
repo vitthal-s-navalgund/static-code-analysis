@@ -1,0 +1,9 @@
+Issue Type            Line(s)    Description                                           Fix Approach
+---------------------------------------------------------------------------------------------------------------
+Mutable default arg    10         logs=[] shared across calls                          Changed default to None
+Bare except clause     19         Bare except hides all exceptions                     Used specific exception type (KeyError)
+Insecure function      59         eval() used, introduces code execution risk          Removed eval(), replaced with safe print()
+File handling          26,32      Files opened without 'with' or encoding specified    Used with open(..., encoding='utf-8')
+Unused import          2          'logging' module imported but never used             Removed unused import
+Missing docstrings     Multiple   Functions lacked docstrings                          Added descriptive docstrings
+Formatting             various  Missing blank lines and indentation issues           Fixed spacing and indentation for readability
